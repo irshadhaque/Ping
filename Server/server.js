@@ -17,8 +17,8 @@ dotenv.config();
 const app = express();
 
 const allowedOrigins = [
-
-  'http://localhost:5173'
+  'http://localhost:5173',
+  process.env.FRONTEND_URL
 ];
 
 let frontendUrl = process.env.FRONTEND_URL;
